@@ -2,12 +2,12 @@ import './App.css';
 import requests from './requests';
 import Row from './components/Row/Row.jsx';
 import Banner from './components/Banner/Banner';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-      {/* Navbar */}
-
+      <Navbar />
       <Banner />
 
       <Row isLargeRow title="NETFLIX ORIGINALS" url={requests.fetchNetflixOriginals} />
