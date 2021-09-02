@@ -34,7 +34,6 @@ const Row = ({ title, url, isLargeRow }) => {
       <h2>{title}</h2>
 
       <div ref={ref} className="row__posters">
-        {/* several row__poster(s) */}
         {movies.map((movie) => (
           <img className={`row__poster ${isLargeRow && 'row__poster--large'}`} key={movie.id} src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name} />
         ))}
